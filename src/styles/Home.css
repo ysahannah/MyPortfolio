@@ -94,3 +94,13 @@
         font-size: 1.5rem;
     }
 }
+
+.my-job {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #fff;
+    animation: fadeUp 1.4s ease-in-out;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    display: inline-block; /* Allow for animation */
+}

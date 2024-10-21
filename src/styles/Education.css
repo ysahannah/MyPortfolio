@@ -58,12 +58,10 @@
 }
 
 .card-title {
-    font-size: 1.5rem; 
-    margin: 10px 0;
+    font-size: 1.3rem; 
 }
 
 .card-text {
     font-size: 1rem; 
     color: #555; 
-    margin-top: 0; 
 }

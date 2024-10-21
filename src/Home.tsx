@@ -1,12 +1,49 @@
 import './styles/Home.css';
+import { useEffect, useState } from 'react';
 
 function Home() {
+    const titles = ["VIRTUAL ASSISTANT / WEB DEVELOPER"];
+    const [displayedText, setDisplayedText] = useState("");
+    const [index, setIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const typingSpeed = 150; 
+    const deletingSpeed = 100; 
+    const pauseDuration = 2000; 
+
+    useEffect(() => {
+        let timeout;
+
+        if (isDeleting) {
+            if (displayedText.length > 0) {
+                timeout = setTimeout(() => {
+                    setDisplayedText(displayedText.slice(0, -1));
+                }, deletingSpeed);
+            } else {
+                setIsDeleting(false);
+                timeout = setTimeout(() => {
+                    setIndex((index + 1) % titles.length);
+                }, pauseDuration);
+            }
+        } else {
+            if (displayedText.length < titles[index].length) {
+                timeout = setTimeout(() => {
+                    setDisplayedText(titles[index].slice(0, displayedText.length + 1));
+                }, typingSpeed);
+            } else {
+                setIsDeleting(true);
+                timeout = setTimeout(() => {}, pauseDuration);
+            }
+        }
+
+        return () => clearTimeout(timeout);
+    }, [displayedText, isDeleting, index]);
+
     return (
         <>
             <div className="hero">
                 <div className="name-container">
-                    <h1>YZAVHEL LEGURO</h1>
-                    <h3>VIRTUAL ASSISTANT / WEB DEVELOPER</h3>
+                    <h1 className='my-name'>YZAVHEL LEGURO</h1>
+                    <h3 className='my-job'>{displayedText}</h3>
 
                     <br />
                     <div className="social-media-icons">
