@@ -5,6 +5,8 @@ import Skills from "./Skills";
 import Education from "./Education";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import About from "./About";
+import Experience from "./Experience";
 
 function App() {
 
@@ -12,8 +14,10 @@ function App() {
     <>
     <Navbar></Navbar>
     <Home></Home>
+    <About></About>
     <Portfolio></Portfolio>
     <Skills></Skills>
+    <Experience></Experience>
     <Education></Education>
     <Resume></Resume>
     <Contact></Contact>

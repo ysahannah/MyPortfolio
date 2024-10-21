@@ -1,7 +1,5 @@
-/* Import Fira Code font */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
 
-/* Skills container */
 .skills {
     height: 70vh;
     display: flex;
@@ -10,48 +8,43 @@
     align-items: center;
     background-color: #1a1a2e;
     padding: 20px;
-    font-family: 'Fira Code', monospace; /* Apply Fira Code to the entire section */
+    font-family: 'Fira Code', monospace;
 }
 
-/* Skills header */
 .skills h1 {
     font-size: 3rem;
     margin-bottom: 50px;
     letter-spacing: 2px;
     color: #f5f5f5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Fira Code', monospace; /* Apply Fira Code */
+    font-family: 'Fira Code', monospace; 
 }
 
-/* Progress bar container */
 .progressbar {
     width: 80%;
     max-width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Spacing between each skill */
+    gap: 20px; 
 }
 
-/* Flex container for label and progress bar */
 .skill-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Skill labels */
 .progressbar label {
     font-size: 1.2rem;
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    width: 20%; /* Set label width */
+    width: 20%; 
     margin-right: 20px;
     text-align: right;
-    font-family: 'Fira Code', monospace; /* Apply Fira Code */
+    font-family: 'Fira Code', monospace;
 }
 
-/* Progress bar wrapper */
 .progress {
     flex-grow: 1;
     height: 25px;
@@ -61,25 +54,21 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Progress bar itself */
 .progress-bar {
     height: 100%;
     border-radius: 50px;
     transition: width 0.5s ease-in-out;
 }
 
-/* Colors for the progress bars */
 .bg-info {
     background: linear-gradient(90deg, #00d2ff, #3a7bd5);
 }
 
-/* Hover effect for bars */
 .progress-bar:hover {
     filter: brightness(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .progressbar {
         width: 90%;
@@ -96,6 +85,6 @@
     }
 
     .progressbar label {
-        width: 30%; /* More space for label on smaller screens */
+        width: 30%; 
     }
 }

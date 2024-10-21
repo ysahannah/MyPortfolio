@@ -7,7 +7,7 @@ function Portfolio() {
             <div id='Portfolio' className='portfolio'>
                 <div>
                     <center>
-                        <h1 className='text-light'>MY PORTFOLIO</h1>
+                        <h2 className='text-light'>PORTFOLIO</h2>
                     </center>
                 </div>
             </div>

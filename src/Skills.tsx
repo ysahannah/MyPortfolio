@@ -4,10 +4,10 @@ function Skills() {
     return (
         <div id='Skills' className="skills">
             <center>
-                <h1 className="text-light">SKILLS</h1>
+                <h2 className="text-light">SKILLS</h2>
             </center>
 
-            <div className="progressbar">
+            <div className="progressbar mt-5">
                 <div className="skill-row">
                     <label className='text-light'>HTML & CSS</label>
                     <div className="progress">

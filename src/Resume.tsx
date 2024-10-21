@@ -2,9 +2,9 @@ import './styles/Resume.css';
 
 function Resume() {
     return(
-        <div className="resume">
+        <div id='Resume' className="resume mt-5">
             <center>
-                <h1 className='text-light'>RESUME</h1>
+                <h2 className='text-light'>RESUME</h2>
             </center>
         </div>
     );

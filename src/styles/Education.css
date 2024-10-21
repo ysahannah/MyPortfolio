@@ -1,3 +1,69 @@
 .education {
-    height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a2e;
+    padding: 40px; 
+}
+
+.education h2 {
+    margin-bottom: 30px; 
+    letter-spacing: 2px;
+    color: #f5f5f5; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.education-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    text-align: center; 
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.icon-container {
+    padding: 20px; 
+    color: white;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-icon {
+    font-size: 6rem;
+    color: #1a1a2e; 
+    transition: transform 0.3s;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.1); 
+    color: #00d2ff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem; 
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 1rem; 
+    color: #555; 
+    margin-top: 0; 
 }

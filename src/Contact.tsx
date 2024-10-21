@@ -5,7 +5,7 @@ function Contact() {
     return(
         <div className="contact">
             <center>
-                <h1 className="text-light">CONTACT</h1>
+                <h2 id='Contact' className="text-light">CONTACT</h2>
             </center>
         </div>
     );
