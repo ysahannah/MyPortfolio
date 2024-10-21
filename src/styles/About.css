@@ -1,62 +1,18 @@
-.about {
-    height: auto; 
-    padding: 40px 20px; 
-    background-color: #1a1a2e; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-    opacity: 0; 
-    transform: translateY(20px); 
-    animation: fadeInUp 0.8s forwards; 
-}
-
-h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 20px; 
-    letter-spacing: 1px; 
-    color: #f5f5f5; 
-    text-align: center; 
-    transition: transform 0.3s ease; 
-}
-
-.main {
-    padding: 20px; 
-}
-
-.about-me {
-    font-size: 1.2rem; 
-    line-height: 1.5; 
-    color: #e0e0e0; 
-    overflow: visible; 
-    white-space: normal; 
-}
-
-@keyframes fadeInUp {
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
     to {
-        opacity: 1; 
+        opacity: 1;
         transform: translateY(0); 
     }
 }
 
-h2:hover {
-    transform: scale(1.05); 
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 2rem; 
-    }
-
-    .text-light {
-        font-size: 1rem; 
-    }
-}
-
-@media (max-width: 576px) {
-    h2 {
-        font-size: 1.5rem; 
-    }
-
-    .text-light {
-        font-size: 0.9rem; 
-    }
+.about {
+    height: auto;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    animation: fadeIn 1s ease-in-out; 
 }
