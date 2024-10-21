@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+/* Global styles */
 body {
-    background-color: #131313;
+    background-color: #1a1a2e;
+    font-family: 'Fira Code', monospace;
+    color: #fff;
+}
+
+/* Example styling for headings */
+h1, h2, h3 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    color: #00d2ff;
+}
+
+/* Example for code blocks or technical sections */
+code, pre {
+    font-family: 'Fira Code', monospace;
+    background-color: #27293d;
+    padding: 10px;
+    border-radius: 4px;
+    color: #00ff99;
 }
