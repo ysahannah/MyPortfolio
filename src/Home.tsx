@@ -1,10 +1,8 @@
 import './styles/Home.css';
-import Navbar from './components/Navbar';
 
 function Home() {
     return (
         <>
-            <Navbar />
             <div className="hero">
                 <div className="name-container">
                     <h1>YZAVHEL LEGURO</h1>

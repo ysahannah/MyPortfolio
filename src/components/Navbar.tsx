@@ -3,7 +3,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#000' }}>
+        <div className="container-fluid">
+            <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#131313' }}>
             <div className="container-fluid">
                 <a className="navbar-brand" href="#" style={{ color: '#fff', fontSize: '2rem', fontWeight: 'bold' }}>YZAVHEL</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,6 +22,7 @@ function Navbar() {
                 </div>
             </div>
         </nav>
+        </div>
     );
 }
 

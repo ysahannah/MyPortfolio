@@ -1,11 +1,13 @@
-import Card from "./components/Card";
+import './styles/Education.css';
 
 function Education(){
 
     return (
-        <>
-        <Card></Card>
-        </>
+        <div id="Education" className="education">
+            <center>
+                <h1 className='text-light'>EDUCATION</h1>
+            </center>
+        </div>
     );
 }
 

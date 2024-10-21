@@ -1,14 +1,13 @@
-import { HelpRounded } from '@mui/icons-material';
 import './styles/Portfolio.css';
 
 function Portfolio() {
 
     return (
         <>
-            <div className='portfolio'>
+            <div id='Portfolio' className='portfolio'>
                 <div>
                     <center>
-                        <h1>My Portfolio</h1>
+                        <h1 className='text-light'>MY PORTFOLIO</h1>
                     </center>
                 </div>
             </div>
