@@ -23,17 +23,20 @@
 }
 
 .card {
-    background-color: #ffffff; 
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s; 
     text-align: center; 
+    border-radius: 0; 
+    position: relative;
+    z-index: 1; 
 }
 
 .card:hover {
     transform: translateY(-8px) scale(1.05); 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.); 
 }
 
 .icon-container {
@@ -44,7 +47,7 @@
 
 .card-icon {
     font-size: 6rem;
-    color: #1a1a2e; 
+    color: #ffffff; 
     transition: transform 0.3s;
 }
 
@@ -63,5 +66,5 @@
 
 .card-text {
     font-size: 1rem; 
-    color: #555; 
+    color: #fff; 
 }

@@ -21,6 +21,7 @@
 .name-container {
     width: 60%;
     background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
     color: #fff;
     text-align: center;
     padding: 20px;

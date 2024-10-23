@@ -12,8 +12,8 @@ function Education() {
                         <FaGraduationCap className="card-icon" />
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title text-dark">Bachelor of Science in Information Technology</h5>
-                        <p className="card-text text-dark">University of Antique</p>
+                        <h5 className="card-title text-light">Bachelor of Science in Information Technology</h5>
+                        <p className="card-text text-light">University of Antique</p>
                     </div>
                 </div>
 
@@ -22,8 +22,8 @@ function Education() {
                         <FaClipboardList className="card-icon" />
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title text-dark">Science, Technology, Engineering and Mathematics</h5>
-                        <p className="card-text text-dark">University of Antique</p>
+                        <h5 className="card-title text-light">Science, Technology, Engineering and Mathematics</h5>
+                        <p className="card-text text-light">University of Antique</p>
                     </div>
                 </div>
 
@@ -32,8 +32,8 @@ function Education() {
                         <FaBook className="card-icon" />
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title text-dark">Junior High School</h5>
-                        <p className="card-text text-dark">University of Antique</p>
+                        <h5 className="card-title text-light">Junior High School</h5>
+                        <p className="card-text text-light">University of Antique</p>
                     </div>
                 </div>
 
@@ -42,8 +42,8 @@ function Education() {
                         <FaSchool className="card-icon" />
                     </div>
                     <div className="card-body">
-                        <h5 className="card-title text-dark">Elementary</h5>
-                        <p className="card-text text-dark">Sta. Rita Academy</p>
+                        <h5 className="card-title text-light">Elementary</h5>
+                        <p className="card-text text-light">Sta. Rita Academy</p>
                     </div>
                 </div>
             </div>

@@ -3,10 +3,9 @@ import Portfolio from "./Portfolio";
 import Home from "./Home";
 import Skills from "./Skills";
 import Education from "./Education";
-import Resume from "./Resume";
 import Contact from "./Contact";
 import About from "./About";
-import Experience from "./Experience";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -17,10 +16,9 @@ function App() {
     <About></About>
     <Portfolio></Portfolio>
     <Skills></Skills>
-    <Experience></Experience>
     <Education></Education>
-    <Resume></Resume>
     <Contact></Contact>
+    <Footer></Footer>
     </>
   );
 }

@@ -16,9 +16,7 @@ function Navbar() {
                             <a className="nav-link" href="#About">ABOUT ME</a>
                             <a className="nav-link" href="#Portfolio">Portfolio</a>
                             <a className="nav-link" href="#Skills">Skills</a>
-                            <a className="nav-link" href="#Experience">EXPERIENCE</a>
                             <a className="nav-link" href="#Education">Education</a>
-                            <a className="nav-link" href="#Resume">Resume</a>
                             <a className="nav-link" href="#Contact">Contact</a>
                         </div>
                     </div>
