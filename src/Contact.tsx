@@ -7,6 +7,7 @@ function Contact() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        subject: '',
         message: ''
     });
 
@@ -27,8 +28,10 @@ function Contact() {
         <div className="contact">
             <div className="row">
                 <form className="contact-form" onSubmit={handleSubmit}>
-                <h2 id="Contact" className="text-light">Contact Me</h2>
-
+                    <center>
+                        <h2 id="Contact" className="text-light">CONTACT ME</h2>
+                    </center>
+                    
                 <div className="contact-info mt-3">
                     <div className="row">
                         <div className="col">
@@ -90,7 +93,9 @@ function Contact() {
                     />
                 </div>
                 <div className="form-group">
-                    <button type="submit" className="submit-btn">Send Message</button>
+                    <center>
+                        <button type="submit" className="submit-btn">Send Message</button>
+                    </center>
                 </div>
             </form>
             </div>

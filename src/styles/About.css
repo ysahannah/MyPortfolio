@@ -11,8 +11,29 @@
 
 .about {
     height: auto;
-    padding-top: 3rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    background-color: #1a1a2e;
+    padding-top: 1rem;
+    margin: 0;
     animation: fadeIn 1s ease-in-out; 
+}
+
+.about-title {
+    color: #1a1a2e;
+}
+
+.about-me {
+    color: #1a1a2e; 
+}
+
+.hire-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #1a1a2e;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.hire-button:hover {
+    background-color: #00d2ff;
 }
