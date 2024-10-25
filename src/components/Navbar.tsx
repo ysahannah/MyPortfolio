@@ -15,11 +15,9 @@ function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
-                            <a className="nav-link" href="#Portfolio">Portfolio</a>
+                            <a className="nav-link" href="#About">ABOUT ME</a>
                             <a className="nav-link" href="#Skills">Skills</a>
-                            <a className="nav-link" href="#Tools">Tools</a>
                             <a className="nav-link" href="#Education">Education</a>
-                            <a className="nav-link" href="#About">ABOUT</a>
                             <a className="nav-link" href="#Contact">Contact</a>
                         </div>
                     </div>

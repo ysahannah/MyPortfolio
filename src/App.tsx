@@ -6,7 +6,6 @@ import Education from "./Education";
 import Contact from "./Contact";
 import About from "./About";
 import Footer from "./components/Footer";
-import Tools from "./Tools";
 
 function App() {
 
@@ -15,10 +14,9 @@ function App() {
     <Navbar></Navbar>
     <Home></Home>
     <Portfolio></Portfolio>
-    <Skills></Skills>
-    <Tools></Tools>
-    <Education></Education>
     <About></About>
+    <Skills></Skills>
+    <Education></Education>
     <Contact></Contact>
     <Footer></Footer>
     </>

@@ -4,15 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #1a1a2e;
-    padding: 40px; 
+    background-color: #fff;
+    padding: 1.5rem; 
 }
 
 .education h2 {
     margin-bottom: 30px; 
     letter-spacing: 2px;
-    color: #f5f5f5; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #1a1a2e; 
 }
 
 .education-cards {
@@ -23,15 +22,16 @@
 }
 
 .card {
-    background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    background-color: rgba(26, 26, 46, 0.8);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
     width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s; 
-    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
     border-radius: 0; 
     position: relative;
-    z-index: 1; 
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card:hover {
@@ -47,7 +47,7 @@
 
 .card-icon {
     font-size: 6rem;
-    color: #ffffff; 
+    color: #fff; 
     transition: transform 0.3s;
 }
 
@@ -62,6 +62,7 @@
 
 .card-title {
     font-size: 1.3rem; 
+    color: #fff;
 }
 
 .card-text {

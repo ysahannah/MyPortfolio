@@ -77,7 +77,7 @@ const MultiCarousel = () => {
   };
 
   return (
-    <div style={{ margin: '50px' }}>
+    <div>
       <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000}>
         {images.map((image, index) => (
           <div 
@@ -141,7 +141,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     transition: 'background-color 0.3s',
   },
   carouselItemHover: {
-    transform: 'scale(1.05)', // Scale up on hover
+    transform: 'scale(1.05)', 
   },
 };
 

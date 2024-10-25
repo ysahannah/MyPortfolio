@@ -4,12 +4,7 @@ import MultiCarousel from './components/MultiCarousel';
 function Portfolio() {
     return (
         <div id='Portfolio' className='portfolio'>
-            <center>
-                <h2 className='text-light'>PORTFOLIO</h2>
-            </center>
-
             <MultiCarousel></MultiCarousel>
-
         </div>
     );
 }
