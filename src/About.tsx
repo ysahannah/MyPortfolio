@@ -5,7 +5,7 @@ function About() {
         <div id="About" className="about">
             <div className="d-flex flex-row about-container">
                 <div className="about-image">
-                    <img src="src/assets/c060d712-d435-4469-924a-851d488e1a12.png" alt="Hannah's Image" />
+                    <img src="../src/assets/c060d712-d435-4469-924a-851d488e1a12.png" alt="Hannah's Image" />
                 </div>
                 <div className="about-description me-5">
                     <center>
