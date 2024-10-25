@@ -69,7 +69,6 @@
         margin-left: auto; 
     }
 
-    /* Ensure the logo resizes correctly on mobile */
     #brand img {
         height: 30px; 
     }
