@@ -1,6 +1,9 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../styles/Navbar.css';
+
+import logo from '../assets/yl1.png'; 
 
 function Navbar() {
     return (
@@ -8,7 +11,7 @@ function Navbar() {
             <nav className="navbar navbar-expand-lg sticky-top custom-navbar">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#Home" id="brand">
-                        <img src="src\assets\yl1.png" height="40px" alt="" />
+                        <img src={logo} height="40px" alt="Logo" />
                     </a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
