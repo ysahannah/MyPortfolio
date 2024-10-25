@@ -1,5 +1,5 @@
 import './styles/About.css';
-import meImage from '../src/assets/me.png'; 
+import meImage from '../src/assets/me_enhanced (1).png'; 
 
 function About() {
     return (
