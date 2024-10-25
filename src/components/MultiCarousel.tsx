@@ -56,6 +56,7 @@ const images = [
 
 const MultiCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
+  const [buttonHoveredIndex, setButtonHoveredIndex] = useState(-1); // for button hover
 
   const responsive = {
     superLargeDesktop: {
@@ -96,7 +97,16 @@ const MultiCarousel = () => {
             />
             <h3 style={styles.title}>{image.title}</h3>
             <p style={styles.description}>{image.description}</p>
-            <button style={styles.button}>View More</button>
+            <button
+              style={{
+                ...styles.button,
+                ...(buttonHoveredIndex === index ? styles.buttonHover : {}),
+              }}
+              onMouseEnter={() => setButtonHoveredIndex(index)}
+              onMouseLeave={() => setButtonHoveredIndex(-1)}
+            >
+              View More
+            </button>
           </div>
         ))}
       </Carousel>
@@ -139,6 +149,9 @@ const styles: { [key: string]: React.CSSProperties } = {
     color: '#fff',
     cursor: 'pointer',
     transition: 'background-color 0.3s',
+  },
+  buttonHover: {
+    backgroundColor: '#00d2ff',
   },
   carouselItemHover: {
     transform: 'scale(1.05)', 
