@@ -50,10 +50,10 @@ function Home() {
                         <a href="https://www.facebook.com/share/nSyqSafM5Awvg3zD/" target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-facebook" aria-label="Facebook"></i>
                         </a>
-                        <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/yzavhelleguro?igsh=Mnk3dHEwMDV5eGls" target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-instagram" aria-label="Instagram"></i>
                         </a>
-                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/ysahannah" target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-github" aria-label="GitHub"></i>
                         </a>
                         <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
