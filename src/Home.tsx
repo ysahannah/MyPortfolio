@@ -47,7 +47,7 @@ function Home() {
 
                     <br />
                     <div className="social-media-icons">
-                        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/share/nSyqSafM5Awvg3zD/" target="_blank" rel="noopener noreferrer">
                             <i className="bi bi-facebook" aria-label="Facebook"></i>
                         </a>
                         <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
