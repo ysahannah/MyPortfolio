@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from 'react-router-dom';
 
 import image1 from '../assets/1.png';
 import image2 from '../assets/Leguro, Hannah Ysabelle.png';
@@ -57,6 +58,7 @@ const images = [
 const MultiCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   const [buttonHoveredIndex, setButtonHoveredIndex] = useState(-1);
+
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -80,7 +82,7 @@ const MultiCarousel = () => {
     <div>
       <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000}>
         {images.map((image, index) => (
-          <div 
+          <div
             key={index}
             style={{
               ...styles.carouselItem,
@@ -104,7 +106,9 @@ const MultiCarousel = () => {
               onMouseEnter={() => setButtonHoveredIndex(index)}
               onMouseLeave={() => setButtonHoveredIndex(-1)}
             >
-              View More
+              <Link to="/frontend-project" style={{ color: '#fff', textDecoration: 'none' }}>
+                View More
+              </Link>
             </button>
           </div>
         ))}
@@ -117,7 +121,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   carouselItem: {
     paddingBottom: '20px',
     textAlign: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)', 
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
     backdropFilter: 'blur(10px)',
     borderRadius: '0',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
@@ -153,7 +157,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#00d2ff',
   },
   carouselItemHover: {
-    transform: 'scale(1.05)', 
+    transform: 'scale(1.05)',
   },
 };
 

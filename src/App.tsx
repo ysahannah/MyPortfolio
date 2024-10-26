@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import About from "./About";
 import Footer from "./components/Footer";
 import Portfolio from './Portfolio';
+import FrontEndProject from './FrontEndProject';
 
 function App() {
 
@@ -19,13 +20,8 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='/education' element={<Education />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/frontend-project' element={<FrontEndProject />} />
       </Routes>
-      <Portfolio />
-      <About />
-      <Skills />
-      <Education />
-      <Contact />
-      <Footer />
     </Router>
   );
 }
