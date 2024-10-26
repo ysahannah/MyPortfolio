@@ -22,6 +22,12 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/frontend-project' element={<FrontEndProject />} />
       </Routes>
+      <Portfolio />
+      <About />
+      <Skills />
+      <Education />
+      <Contact />
+      <Footer />
     </Router>
   );
 }
