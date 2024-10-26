@@ -56,8 +56,7 @@ const images = [
 
 const MultiCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
-  const [buttonHoveredIndex, setButtonHoveredIndex] = useState(-1); // for button hover
-
+  const [buttonHoveredIndex, setButtonHoveredIndex] = useState(-1);
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },

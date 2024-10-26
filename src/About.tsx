@@ -1,5 +1,5 @@
 import './styles/About.css';
-import meImage from '../src/assets/me_enhanced (1).png'; 
+import meImage from '../src/assets/aifaceswap-02a6e53fea00a8695c9d0ceb7356e144(1)_enhanced.jpg'; 
 
 function About() {
     return (
