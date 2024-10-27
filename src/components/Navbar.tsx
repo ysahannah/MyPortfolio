@@ -35,22 +35,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('about')}>
+              <span className="nav-link" onClick={() => handleScrollLink('About')}>
                 About
               </span>
             </li>
             <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('skills')}>
+              <span className="nav-link" onClick={() => handleScrollLink('Skills')}>
                 Skills
               </span>
             </li>
             <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('education')}>
+              <span className="nav-link" onClick={() => handleScrollLink('Education')}>
                 Education
               </span>
             </li>
             <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('contact')}>
+              <span className="nav-link" onClick={() => handleScrollLink('Contact')}>
                 Contact
               </span>
             </li>
