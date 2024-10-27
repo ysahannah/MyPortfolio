@@ -1,6 +1,5 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
-   
 import logo from '../assets/yl1.png'; 
 
 const Navbar = () => {
@@ -11,7 +10,10 @@ const Navbar = () => {
     if (location.pathname !== '/') {
       navigate('/', { state: { scrollTo: to } });
     } else {
-      document.getElementById(to)?.scrollIntoView({ behavior: 'smooth' });
+      const targetElement = document.getElementById(to);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -34,26 +36,13 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('About')}>
-                About
-              </span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('Skills')}>
-                Skills
-              </span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('Education')}>
-                Education
-              </span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link" onClick={() => handleScrollLink('Contact')}>
-                Contact
-              </span>
-            </li>
+            {['About', 'Skills', 'Education', 'Contact'].map((item) => (
+              <li className="nav-item" key={item}>
+                <button className="nav-link" onClick={() => handleScrollLink(item)}>
+                  {item}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
