@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Home from "./Home";
 import Skills from "./Skills";
@@ -10,9 +10,9 @@ import Portfolio from './Portfolio';
 import FrontEndProject from './FrontEndProject';
 
 function App() {
-
+  const location = useLocation(); 
   return (
-    <Router>
+    <div>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,14 +22,28 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/frontend-project' element={<FrontEndProject />} />
       </Routes>
-      <Portfolio />
-      <About />
-      <Skills />
-      <Education />
-      <Contact />
-      <Footer />
+
+      {/* Conditionally render the following components if not on FrontEndProject route */}
+      {location.pathname !== '/frontend-project' && (
+        <>
+          <Portfolio />
+          <About />
+          <Skills />
+          <Education />
+          <Contact />
+          <Footer />
+        </>
+      )}
+    </div>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App
+export default AppWrapper;

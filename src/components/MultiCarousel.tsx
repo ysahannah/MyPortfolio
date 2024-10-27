@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Link } from 'react-router-dom';
 
 import image1 from '../assets/1.png';
 import image2 from '../assets/Leguro, Hannah Ysabelle.png';
@@ -58,6 +58,7 @@ const images = [
 const MultiCarousel = () => {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   const [buttonHoveredIndex, setButtonHoveredIndex] = useState(-1);
+  const navigate = useNavigate();
 
   const responsive = {
     superLargeDesktop: {
@@ -78,11 +79,17 @@ const MultiCarousel = () => {
     },
   };
 
+  const handleViewMoreClick = (index: number) => {
+    if (index === 4) {
+      navigate('/frontend-project');
+    }
+  }
+
   return (
     <div>
       <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000}>
         {images.map((image, index) => (
-          <div
+          <div 
             key={index}
             style={{
               ...styles.carouselItem,
@@ -105,10 +112,9 @@ const MultiCarousel = () => {
               }}
               onMouseEnter={() => setButtonHoveredIndex(index)}
               onMouseLeave={() => setButtonHoveredIndex(-1)}
+              onClick={() => handleViewMoreClick(index)}
             >
-              <Link to="/frontend-project" style={{ color: '#fff', textDecoration: 'none' }}>
-                View More
-              </Link>
+              View More
             </button>
           </div>
         ))}
@@ -121,7 +127,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   carouselItem: {
     paddingBottom: '20px',
     textAlign: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.2)', 
     backdropFilter: 'blur(10px)',
     borderRadius: '0',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
@@ -157,7 +163,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     backgroundColor: '#00d2ff',
   },
   carouselItemHover: {
-    transform: 'scale(1.05)',
+    transform: 'scale(1.05)', 
   },
 };
 
