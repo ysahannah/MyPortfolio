@@ -1,5 +1,11 @@
 import './styles/Home.css';
 import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
+import Portfolio from './Portfolio';
+import About from './About';
+import Skills from './Skills';
+import Education from './Education';
+import Contact from './Contact';
 
 function Home() {
     const titles = ["VIRTUAL ASSISTANT / WEB DEVELOPER"];
@@ -40,6 +46,7 @@ function Home() {
 
     return (
         <>
+        <Navbar />
             <div className="hero">
                 <div className="name-container">
                     <h1 className='my-name'>YZAVHEL LEGURO</h1>
@@ -62,6 +69,11 @@ function Home() {
                     </div>
                 </div>
             </div>
+        <Portfolio />
+        <About />
+        <Skills />
+        <Education />
+        <Contact />
         </>
     );
 }

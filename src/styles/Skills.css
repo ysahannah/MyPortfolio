@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 1s forwards;
 }
 
 .skills h2 {
@@ -42,6 +45,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0; 
+    transform: translateX(-20px); 
+    animation: fadeIn 0.5s forwards; 
+    animation-delay: var(--delay); 
 }
 
 .progressbar label {
@@ -61,12 +68,15 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 0;
+    position: relative; 
 }
 
 .progress-bar {
     height: 100%;
-    transition: width 0.5s ease-in-out;
+    transition: width 1s ease-in-out; 
     border-radius: 0;
+    width: 0; 
+    animation: grow 1s forwards; 
 }
 
 .bg-info {
@@ -124,3 +134,35 @@
         width: 100%; 
     }
 }
+
+/* Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--width); 
+    }
+}
+
+/* Animation Delay for Each Skill Row */
+.skill-row:nth-child(1) { --delay: 0.1s; --width: 100%; }
+.skill-row:nth-child(2) { --delay: 0.2s; --width: 25%; }
+.skill-row:nth-child(3) { --delay: 0.3s; --width: 50%; }
+.skill-row:nth-child(4) { --delay: 0.4s; --width: 50%; }
+.skill-row:nth-child(5) { --delay: 0.5s; --width: 80%; }
+.skill-row:nth-child(6) { --delay: 0.6s; --width: 20%; }
