@@ -91,7 +91,7 @@ const MultiCarousel = () => {
         responsive={responsive} 
         autoPlay={true} 
         autoPlaySpeed={3000} 
-        infinite={true} // Enables continuous animation
+        infinite={true} 
         arrows={false} // Optional: Hide arrows for a smoother effect
         swipeable={true} // Optional: Prevent manual swiping
       >
