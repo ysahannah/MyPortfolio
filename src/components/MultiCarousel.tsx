@@ -83,11 +83,18 @@ const MultiCarousel = () => {
     if (index === 4) {
       navigate('/frontend-project');
     }
-  }
+  };
 
   return (
     <div>
-      <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000}>
+      <Carousel 
+        responsive={responsive} 
+        autoPlay={true} 
+        autoPlaySpeed={3000} 
+        infinite={true} // Enables continuous animation
+        arrows={false} // Optional: Hide arrows for a smoother effect
+        swipeable={true} // Optional: Prevent manual swiping
+      >
         {images.map((image, index) => (
           <div 
             key={index}
@@ -127,27 +134,30 @@ const styles: { [key: string]: React.CSSProperties } = {
   carouselItem: {
     paddingBottom: '20px',
     textAlign: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.2)', 
+    backgroundColor: '#ffffff', 
     backdropFilter: 'blur(10px)',
-    borderRadius: '0',
+    borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     transition: 'transform 0.2s',
     margin: '0 10px',
   },
   image: {
-    width: '100%',
-    height: '200px',
-    objectFit: 'cover',
-    borderRadius: '0',
-  },
+  width: '100%',
+  height: '200px',
+  objectFit: 'cover',
+  borderTopLeftRadius: '10px',
+  borderTopRightRadius: '10px',
+  transition: 'transform 0.3s', // Add transition for smooth effect
+},
+
   title: {
     fontSize: '1.5rem',
     margin: '10px 0',
-    color: '#ffffff',
+    color: '#1a1a2e',
   },
   description: {
     fontSize: '1rem',
-    color: '#fff',
+    color: '#1a1a2e',
   },
   button: {
     padding: '10px 15px',
