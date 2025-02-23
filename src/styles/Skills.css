@@ -71,16 +71,21 @@
     position: relative; 
 }
 
-.progress-bar {
-    height: 100%;
-    transition: width 1s ease-in-out; 
-    border-radius: 0;
-    width: 0; 
-    animation: grow 1s forwards; 
+/* Progress Bar Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.bg-info {
-    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+.progress-bar {
+    height: 100%;
+    transition: width 1s ease-in-out;
+    border-radius: 0;
+    width: 0;
+    animation: grow 1s forwards, gradientAnimation 3s infinite linear;
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5, #00d2ff);
+    background-size: 200% 200%;
 }
 
 .progress-bar:hover {
