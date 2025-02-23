@@ -163,7 +163,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     padding: '10px 15px',
     marginTop: '10px',
     border: 'none',
-    borderRadius: '0',
+    borderRadius: '10px',
     backgroundColor: '#1a1a2e',
     color: '#fff',
     cursor: 'pointer',

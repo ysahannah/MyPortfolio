@@ -36,7 +36,7 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {['About', 'Skills', 'Education', 'Contact'].map((item) => (
+            {['About', 'Skills', 'Tools'].map((item) => (
               <li className="nav-item" key={item}>
                 <button className="nav-link" onClick={() => handleScrollLink(item)}>
                   {item}

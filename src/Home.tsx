@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Portfolio from './Portfolio';
 import About from './About';
 import Skills from './Skills';
-import Education from './Education';
-import Contact from './Contact';
+// import Tools from './Tools';
+import Footer from './components/Footer';
 
 function Home() {
     const titles = ["VIRTUAL ASSISTANT / WEB DEVELOPER"];
@@ -72,8 +72,8 @@ function Home() {
         <Portfolio />
         <About />
         <Skills />
-        <Education />
-        <Contact />
+        {/* <Tools /> */}
+        <Footer />
         </>
     );
 }

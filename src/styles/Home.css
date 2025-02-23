@@ -21,6 +21,7 @@
     text-align: center;
     padding: 20px;
     animation: slideIn 1s ease-in-out;
+    border-radius: 10px;
 }
 
 .name-container h1 {
@@ -89,4 +90,8 @@
     white-space: wrap; 
     overflow: hidden; 
     display: inline-block; 
+}
+
+footer {
+    margin: 5px;
 }
