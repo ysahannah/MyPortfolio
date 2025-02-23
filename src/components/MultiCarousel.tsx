@@ -92,8 +92,8 @@ const MultiCarousel = () => {
         autoPlay={true} 
         autoPlaySpeed={3000} 
         infinite={true} 
-        arrows={false} // Optional: Hide arrows for a smoother effect
-        swipeable={true} // Optional: Prevent manual swiping
+        arrows={false} 
+        swipeable={true} 
       >
         {images.map((image, index) => (
           <div 
