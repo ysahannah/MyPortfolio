@@ -1,7 +1,7 @@
 /* Navbar container */
 .custom-navbar {
     background-color: #1a1a2e;
-    padding: 1rem 2rem;
+    padding: 1rem;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
