@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from "./Home";
 import Skills from "./Skills";
-import Education from "./Education";
+import Tools from './Tools';
 import Contact from "./Contact";
 import About from "./About";
 import FrontEndProject from './FrontEndProject';
@@ -24,7 +24,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/skills' element={<Skills />} />
-        <Route path='/education' element={<Education />} />
+        <Route path='/tools' element={<Tools />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/frontend-project' element={<FrontEndProject />} />
       </Routes>
